@@ -9,6 +9,7 @@ import ResourceDistribution from "../components/dashboard/ResourceDistribution";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Dashboard() {
+  string testVariable;
   const { data: resources, isLoading: loadingResources } = useQuery({
     queryKey: ['resources'],
     queryFn: () => base44.entities.Resource.list("-created_date"),
