@@ -1,0 +1,49 @@
+2025-12-06T21:55:53.197Z eslint:cli CLI args: [ '.', '--debug' ]
+2025-12-06T21:55:53.204Z eslint:cli Using flat config? true
+2025-12-06T21:55:53.216Z eslint:cli Running on files
+2025-12-06T21:55:53.221Z eslint:eslint Using config loader LegacyConfigLoader
+2025-12-06T21:55:53.223Z eslint:eslint Using file patterns: .
+2025-12-06T21:55:53.223Z eslint:eslint Deleting cache file at C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\.eslintcache
+(node:16556) ESLintIgnoreWarning: The ".eslintignore" file is no longer supported. Switch to using the "ignores" property in "eslint.config.js": https://eslint.org/docs/latest/use/configure/migration-guide#ignoring-files
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-12-06T21:55:53.291Z eslint:config-loader Calculating config for file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\.dcignore
+2025-12-06T21:55:53.292Z eslint:config-loader Searching for eslint.config.js
+2025-12-06T21:55:53.304Z eslint:config-loader [Legacy]: Calculating config for C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\.dcignore
+2025-12-06T21:55:53.305Z eslint:config-loader [Legacy]: Using config file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\eslint.config.js and base path C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande
+2025-12-06T21:55:53.306Z eslint:config-loader Calculating config array from config file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\eslint.config.js and base path C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande
+2025-12-06T21:55:53.309Z eslint:config-loader Loading config file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\eslint.config.js
+2025-12-06T21:55:53.309Z eslint:config-loader Loading config from C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\eslint.config.js
+2025-12-06T21:55:53.311Z eslint:config-loader Config file URL is file:///C:/Users/tim/OneDrive/BWI/7.%20Semester/Bachelorarbeit/Themen/Vibe-Coding/Code/Base44/Ressource_Flow_Handmande/eslint.config.js
+2025-12-06T21:55:56.150Z eslint:config-loader Config file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\eslint.config.js is not empty
+2025-12-06T21:55:56.158Z eslint:config-loader Calculating config for file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\.eslintignore
+2025-12-06T21:55:56.158Z eslint:config-loader [Legacy]: Calculating config for C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\.eslintignore
+2025-12-06T21:55:56.158Z eslint:config-loader [Legacy]: Using config file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\eslint.config.js and base path C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande
+2025-12-06T21:55:56.159Z eslint:config-loader Calculating config for file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\babel.config.js
+2025-12-06T21:55:56.159Z eslint:config-loader [Legacy]: Calculating config for C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\babel.config.js
+2025-12-06T21:55:56.159Z eslint:config-loader [Legacy]: Using config file C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande\eslint.config.js and base path C:\Users\tim\OneDrive\BWI\7. Semester\Bachelorarbeit\Themen\Vibe-Coding\Code\Base44\Ressource_Flow_Handmande
+
+Oops! Something went wrong! :(
+
+ESLint: 9.39.1
+
+
+A config object has a "plugins" key defined as an array of strings. It looks something like this:
+
+    {
+        "plugins": ["react"]
+    }
+
+Flat config requires "plugins" to be an object, like this:
+
+    {
+        plugins: {
+            react: pluginObject
+        }
+    }
+
+Please see the following page for information on how to convert your config object into the correct format:
+https://eslint.org/docs/latest/use/configure/migration-guide#importing-plugins-and-custom-parsers
+
+If you're using a shareable config that you cannot rewrite in flat config format, then use the compatibility utility:
+https://eslint.org/docs/latest/use/configure/migration-guide#using-eslintrc-configs-in-flat-config
+
