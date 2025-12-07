@@ -1,0 +1,61 @@
+{
+  "name": "Resource",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name der Ressource"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "employee",
+        "room",
+        "equipment"
+      ],
+      "description": "Typ der Ressource"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "available",
+        "in_use",
+        "maintenance",
+        "unavailable"
+      ],
+      "default": "available",
+      "description": "Verfügbarkeitsstatus"
+    },
+    "description": {
+      "type": "string",
+      "description": "Beschreibung der Ressource"
+    },
+    "location": {
+      "type": "string",
+      "description": "Standort der Ressource"
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Kapazität (z.B. Personen bei Räumen)"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Fähigkeiten (bei Mitarbeitern) oder Features"
+    },
+    "contact_info": {
+      "type": "string",
+      "description": "Kontaktinformationen"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Bild der Ressource"
+    }
+  },
+  "required": [
+    "name",
+    "type"
+  ]
+}

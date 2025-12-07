@@ -1,0 +1,79 @@
+{
+  "name": "Task",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Titel der Aufgabe"
+    },
+    "description": {
+      "type": "string",
+      "description": "Beschreibung der Aufgabe"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "default": "medium",
+      "description": "Priorität der Aufgabe"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "in_progress",
+        "completed",
+        "cancelled"
+      ],
+      "default": "planned",
+      "description": "Status der Aufgabe"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Startdatum"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Enddatum"
+    },
+    "assigned_resources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs der zugewiesenen Ressourcen"
+    },
+    "progress": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 0,
+      "description": "Fortschritt in Prozent"
+    },
+    "effort": {
+      "type": "number",
+      "description": "Geschätzter Aufwand"
+    },
+    "effort_unit": {
+      "type": "string",
+      "enum": [
+        "hours",
+        "days",
+        "weeks"
+      ],
+      "default": "hours",
+      "description": "Einheit für den Aufwand"
+    }
+  },
+  "required": [
+    "title",
+    "start_date",
+    "end_date"
+  ]
+}
